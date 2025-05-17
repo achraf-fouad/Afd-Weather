@@ -1,268 +1,97 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    text-decoration: none;
-    list-style: none;
+}
+
+body {
+    background: #222;
+}
+
+.card{
+    width: 90%;
+    max-width:470px ;
+    background: linear-gradient(135deg, #00feba, #5b548a);
     color: #fff;
-}
-
-body{
-    background-color: #fa8c2b;
-
-}
-
-/*header*/
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 100px;
-    background-color: #fa662b;
-    position: relative;
-    width: 100%;
-    z-index: 1000;
-    top: 0;
-    right: 0;
-}
-
-header .logo{
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: 700;
-    background-color: #fa662b;
-    display: flex;
-    align-items: center;
+    margin: 100px auto 0 ;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
 
 }
-.logo p{
-    margin-left: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 
-header ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fa662b;
-    column-gap: 3rem;
-
-}
-ul a{
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: 500;
-    background-color: #fa662b;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-}
-ul a:hover{
-    background-color: #fff;
-    color: #fa662b;
-}
-#cs{
-    text-decoration: underline;
-    margin-top: 0.2rem;
-}
-/*search*/
 .search{
-    max-width: 968px;
-    position: relative;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 5px 10px;
-    border-radius: 5px;
-    text-align: center;
-    padding: 4.5rem 0 1.5rem;
-    margin-left: 20rem;
-}
-
-.search-prt {
-    display: flex;
     align-items: center;
-}
-.search-prt input{
     width: 100%;
-    height: 40px;
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    font-size: 1.4rem;
-    background-color: #fff;
-    color: #333;
-    margin-right: 1rem;
-
-}
-.search-prt i{
-    font-size: 1.4rem;
-    margin-right: 1rem;
-
 }
 
-.c-f{
-    font-size: 1.4rem;
-    font-family: serif;
-}
-
-.txt{
-    text-align: center;
-    margin-top: 2rem;
-}
-.txt p{
-    font-size: 1.5rem;
-    font-weight: 300;
-    font-family: serif;
-    margin-bottom: 2.5rem;
-}
-
-.txt h2{
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 2rem;
-}
-
-.txt h4{
-    font-size: 1.5rem;
-    font-weight: 300;
-    font-family: serif;
-    margin-bottom: 2rem;
-    color: aqua;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-}
-.degree{
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    margin-bottom: 4rem;
-    max-width: 968px;
-    align-items: center;
-    position: relative;
-    margin: auto;  
-}
-.degree .sun1{
-    font-size: 7rem;
-    color: #f9d71c;
-}
-
-.degree h2{
-    font-size: 3rem;
-    font-weight: 600;
-}
-
-.degree ul li{
-    font-family: serif;
-    margin-bottom: 0.5rem;
-    color: aqua;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.degree ul li span {
-    font-weight: 700;
-    font-size: 1.1rem;
-}
-
-
-.sunset{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    margin-bottom: 2rem;
-    max-width: 668px;
-    align-items: center;
-    position: relative;
-    margin: auto; 
-    margin-top: 2rem; 
-}
-
-.sunset a{
-    font-size: 1.3rem;
-    font-weight: 400;
-}
-
-.sunset a span{
-    font-weight: 700;
-    font-size: 1.3rem;
-}
-
-.hourly{
-    max-width: 968px;
-    position: relative;
-    margin: auto;
-    margin-top: 3rem;
-}
-.hourly h3{
-    border-bottom: 1px solid white;
-    padding-bottom: 1rem;
-    text-transform: uppercase;
-}
-
-table{
-    width: 80%;
-    border-collapse: collapse;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    margin: auto;
-    text-align: center;
-}
-
-td{
+.search input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
     height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
 }
 
-td i{
-    font-size: 3rem;
-}
-
-.bx-sun{
-    color: #f9d71c;
-}
-
-.bx-cloud-rain,
-.bx-cloud-lightning {
-    color: rgb(117, 117, 117);
-}
-
-.Tr td{
-    font-size: 1.5rem;
-    font-weight: 400;
-}
-
-footer{
-    background-color: #fa662b;
-    color: #fff;
-    text-align: center;
-    padding: 10px ;
-    width: 100%;
-    height: 80px;
-}
-
-footer p{
-    margin-top: 1rem;
-}
-.icons{
-    font-size: 1.5rem;
-    float: right;
-}
-
-.icons i{
-    margin-left: 0.5rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    transform: translateY(0.3s) linear;
-}
-
-.icons i:hover{
-    transform: translateY(-0.3s) linear;
-    color:#fa662b;
-    background: #fff;
+.search button{
+    background: #ebfffc;
+    border: 0;
+    outline: 0;
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
+.search button img{
+    width: 16px;
+}
+
+.weather{
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 30px;
+    }
+
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity, .wind{
+    font-size: 28px;
+    margin-top: -6px;
+}

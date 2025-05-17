@@ -3,145 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather</title>
+    <title>weather</title>
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
 </head>
 <body>
-    <!--header-->
-    <header>
-        <a href="#" class="logo">
-            <i class='bx bxs-cloud' ></i>         
-            <p>Afd-weather</p>
-        </a>
-        <ul>
-            <li><a href="#london">London</a></li>
-            <li><a href="#paris">Paris</a></li>
-            <li><a href="#newyork">New York</a></li>
-            <li><a href="#tokyo">Tokyo</a></li>
-            <li><a href="#casa" id="cs" class="active">Casablanca</a></li>
-        </ul>
-    </header>
-    <!--search-->
-    <section class="search">
-    <div class="search-prt">
-        <input type="text" class="search-txt" placeholder="Search for a city">
-        <i class='bx bx-search-alt-2'></i>
-        <i class='bx bx-location-plus' ></i>
-        </div>        
-    <div class="c-f">
-        <p>C° | F°</p>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="enter city name" spellcheck="false">
+            <button><img src="./imgs/search.png"></button>
+        </div>
+        <div class="weather">
+            <img src="./imgs/rain.png" class="weather-icon">
+            <h1 class="temp">22°c</h1>
+            <h2 class="city">New york</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="./imgs/humidity.png" >
+                    <div>
+                        <div class="humidity">50%</div>
+                        <div>Humidity</div>
+                    </div>
+                </div>
+                 <div class="col">
+                    <img src="./imgs/wind.png" >
+                   <div>
+                     <div class="wind">15 km/h</div>
+                    <div>Wind Speed</div>
+                   </div>
+                </div>
+            </div>
+        </div>
     </div>
-    </section>
-    <!--casa-->
-    <section class="casa">
-        <div class="txt">
-            <p>Monday, 10 february 2025 | Local time: 22:14</p>
-            <h2>Casablanca, MA</h2>
-            <h4>Clear</h4>
-        </div>
-        <div class="degree">
-            <i class='bx bxs-sun sun1'></i>
-            <h2>21°</h2>
-            <ul>
-                <li>
-                    <i class='bx bxs-thermometer' ></i> Real fell: <span>19°</span> 
-                </li>
-                <li>
-                    <i class='bx bx-droplet' ></i> Humidity: <span>36%</span>
-                </li>
-                <li>
-                    <i class='bx bx-wind' ></i> Wind: <span>9Km/h</span>
-                </li>
-            </ul>
-        </div>
-        <div class="sunset">
-            <a href="#">
-                <i class='bx bx-sun' ></i> Rise: <span>07:55 </span>
-            </a>
-            <a href="">|</a>
-            <a href="#">
-                <i class='bx bx-sun' ></i> Set: <span>18:59</span> 
-            </a>
-            <a href="">|</a>
-            <a href="#">
-                <i class='bx bx-sun' ></i> High: <span>32°</span> 
-            </a>
-            <a href="">|</a>
-            <a href="#">
-                <i class='bx bx-sun' ></i> Low: <span>8°</span> 
-            </a>
-        </div>
-    </section>
-    <section class="hourly">
-        <h3>hourly forecast</h3>
-        <table>
-            <thead>
-                <tr>
-                    <td>12:00 PM</td>
-                    <td>01:00 PM</td>
-                    <td>02:00 PM</td>
-                    <td>03:00 PM</td>
-                    <td>04:00 PM</td>
-
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><i class='bx bx-sun' ></i></td>
-                    <td><i class='bx bx-sun' ></i></td>
-                    <td><i class='bx bx-sun' ></i></td>
-                    <td><i class='bx bx-cloud-rain'></i></td>
-                    <td><i class='bx bx-cloud'></i></td>
-                </tr>
-                <tr class="Tr">
-                    <td>21°</td>
-                    <td>22°</td>
-                    <td>23°</td>
-                    <td>24°</td>
-                    <td>25°</td>
-                </tr>
-            </tbody>
-        </table>
-        <h3>daily forecast</h3>
-        <table>
-            <thead>
-                <tr>
-                    <td>Sat</td>
-                    <td>Sun</td>
-                    <td>Mon</td>
-                    <td>Tue</td>
-                    <td>Wed</td>
-
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><i class='bx bx-cloud-lightning' ></i></td>
-                    <td><i class='bx bx-cloud-lightning' ></i></td>
-                    <td><i class='bx bx-cloud-lightning' ></i></td>
-                    <td><i class='bx bx-cloud-rain'></i></td>
-                    <td><i class='bx bx-cloud'></i></td>
-                </tr>
-                <tr class="Tr">
-                    <td>20°</td>
-                    <td>18°</td>
-                    <td>20°</td>
-                    <td>19°</td>
-                    <td>20°</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-    <footer>
-        <p>&copy; copyright    2026 Afd-weather</p>
-        <div class="icons">
-            <i class='bx bxl-github'></i>
-            <i class='bx bx-envelope' ></i>
-            <i class='bx bxl-facebook-circle' ></i>
-            <i class='bx bxl-instagram-alt' ></i>
-        </div>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
